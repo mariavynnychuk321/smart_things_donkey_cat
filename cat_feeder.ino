@@ -10,7 +10,7 @@ volatile bool isEmpty = false;
 
 int magicNum = 3;     				// [how much times a day cat eats] - 1
 short i = 0;        				// how much times worked
-int feedTime[4][2];  				// array with feed time
+int feedTime[10][2];  				// array with feed time
   
 void getTiming() {
 	
