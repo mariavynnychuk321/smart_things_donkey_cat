@@ -20,6 +20,7 @@ public class ArduinoClient {
  			
 			// just test
 			String data = "9:40 10:40 11:40 9:40 10:40 11:40";
+			
 			serialPort.writeString(data);
 			System.out.println("data sent");
 			
