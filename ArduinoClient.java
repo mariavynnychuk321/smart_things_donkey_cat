@@ -17,7 +17,8 @@ public class ArduinoClient {
 			serialPort.setParams(9600,8,1,0);
 			System.out.println("port opened");
 			Thread.sleep(4000);
- 
+ 			
+			// just test
 			String data = "9:40 10:40 11:40 9:40 10:40 11:40";
 			serialPort.writeString(data);
 			System.out.println("data sent");
