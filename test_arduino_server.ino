@@ -4,7 +4,7 @@ String data;
 bool toReadOrNotToRead = false;
 
 int magicNum = 0;
-int feedTime[10] = {-9, -9, -9, -9, -9, -9, -9, -9, -9, -9};
+int feedTime[10];
 
 void setup() {
   Serial.begin(9600);
