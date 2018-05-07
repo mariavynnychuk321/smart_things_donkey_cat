@@ -159,9 +159,6 @@ void loop () {
 
     tmElements_t currentTime;
  
-//	TEST
-//	feedTime[0] = 15;
-//	feedTime[1] = 26;  
   
 	// read time
 	if (RTC.read(currentTime)) {
