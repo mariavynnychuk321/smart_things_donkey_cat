@@ -75,7 +75,9 @@ void giveFood() {
 			myServo.write(99);
 		}
    
-    	if (!isEmpty) myServo.write(0); // close
+    	if (!isEmpty) {
+    		myServo.write(0); // close
+    	}
 	
 	}
 
@@ -166,13 +168,6 @@ void loop () {
     
     	// time stores like [hour] [minute] [hour] [minute] ......
 		if (currentTime.Hour == feedTime[i] && currentTime.Minute == feedTime[i + 1]) {
-			
-			/* works actualy, so problem is not here
-			digitalWrite(10, LOW); // red
-        	digitalWrite(12, HIGH);  // green
-        	digitalWrite(13, HIGH); // blue
-        	delay(300);
-         	*/
 
 			giveFood();
 
